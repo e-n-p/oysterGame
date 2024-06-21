@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CheckPointApplication {
+public class oysterGameApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CheckPointApplication.class, args);
+		SpringApplication.run(oysterGameApplication.class, args);
 	}
 
 }
