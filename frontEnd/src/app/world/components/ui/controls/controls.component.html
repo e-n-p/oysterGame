@@ -1,0 +1,24 @@
+<div *ngIf="captains$ | async as captains">
+    <div class="control" *ngFor="let cap of captains">
+        <img src="/assets/{{cap.name}}.png">
+        <div class="details">
+            <p>Name - {{cap.name}}</p>
+            <p>Experience - {{cap.experience}} yrs</p>
+            <p>Licence type - {{cap.licence}}</p>
+        </div>
+    </div>
+</div>
+<br>
+
+<div *ngIf="boats$ | async as boats">
+    <div class="control" *ngFor="let boat of boats">
+        <img src="/assets/{{boat.name}}.png">
+        <div class="details">
+            <p>Name - {{boat.name}}</p>
+            <p>Captain - {{boat.captain.name}}</p>
+            <p>Speed - {{boat.speed}}</p>
+            <p>Carrying capacity - {{boat.capacity}}</p>
+            <p>Model - {{boat.model}}</p>
+        </div>
+    </div>
+</div>
