@@ -7,7 +7,7 @@ import { EntitiesService } from './shared/services/entities.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'OysterGame';
+  title = 'oysterGame';
 
   private entityService = inject(EntitiesService); //replace with guard
 
