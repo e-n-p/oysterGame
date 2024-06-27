@@ -11,7 +11,7 @@ public class Game {
     private List<AbstractState> states;
 
     public Game(List<AbstractState> states) {
-        this.currentState = currentState;
+//        this.currentState = currentState;
         this.states = states;
     }
 
@@ -22,6 +22,7 @@ public class Game {
                 gameState.update();
             }
             gameOver = this.stoppingCondition();
+            break;
         }
     }
 
